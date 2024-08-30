@@ -1,0 +1,248 @@
+*{
+   scroll-behavior: smooth;
+}
+body{
+   margin: 0;
+   font-family: 'Noto Sans', sans-serif;
+}
+
+nav{
+   height: 4vmax;
+   display: flex;
+   align-items: center;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.498);
+   position: sticky;
+   top: 0;
+   background-color: #fff;
+   z-index: 10000;
+}
+
+.left{
+   width: 20%;
+   display: flex;
+   justify-content: center;
+}
+
+.left>a{
+   text-decoration: none;
+   color: blueviolet;
+   font-size: 2vmax;
+   font-weight: 600;
+}
+
+.mid{
+   width: 60%;
+   display: flex;
+   align-self: stretch;
+   justify-content: space-evenly;
+}
+
+.mid > a{
+   text-decoration: none;
+   color: black;
+   font-size: 2vmax;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.mid > a:hover{
+   border-bottom: 1px solid crimson;
+   color: crimson;
+}
+
+.right{
+   display: flex;
+   justify-content: center;
+   width: 20%;
+}
+
+.right > img{
+   width: 3vmax;
+   margin: 1vmax;
+   cursor: pointer;
+}
+
+.home{
+   display: flex;
+   height: 90vh;
+   background-image: radial-gradient(rgba(220, 81, 109, 0.858), rgba(73, 195, 209, 0.913));
+}
+
+.container{
+   width: 100%;
+   height: 100%;
+}
+
+#rightContainer{
+   display: flex;
+   justify-content: flex-end;
+}
+
+#rightContainer>img{
+   margin-right: 7vmax;
+   filter: drop-shadow(0 0 10px black);
+}
+
+#leftContainer{
+   display: flex;
+   flex-direction: column;
+   padding: 2vmax;
+   box-sizing: border-box;
+   justify-content: center;
+}
+
+#leftContainer>h1{
+   font-size: 5vmax;
+   font-weight: 700;
+}
+
+#leftContainer>h2{
+   font-size: 2vmax;
+   margin-top: -10%;
+   font-weight: 500;
+}
+
+#leftContainer>p{
+   margin-left: 4%;
+   font-style: italic;
+   font-size: 1.5vmax;
+   font-weight: 400;
+}
+
+#leftContainer > button{
+   font-weight: 500;
+   width: 11vmax;
+   padding: 1vmax;
+   background-color: rgb(232, 46, 83);
+   border-radius: 25px;
+   border: none;
+   transition: all 0.3s;
+   color: white;
+   cursor: pointer;
+}
+
+#leftContainer>button:hover{
+   background: white;
+   color: crimson;
+}
+
+/* --------------------------- */
+
+.products>h1{
+   text-align: center;
+   margin: 5vmax auto;
+   font-size: 2.5vmax;
+   border-bottom: 5px solid crimson;
+   width: 25vw;
+}
+.productsContainer{
+   justify-content: center;
+   display: flex;
+   flex-wrap: wrap;
+   height: 100%;
+   max-width: 80vw;
+   margin: auto;
+}
+/* ----------------Styling for product---------- */
+.product{
+   height: 30vmax;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   cursor: pointer;
+   margin: 1vmax;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.491);
+   transition: all 0.3s;
+}
+.product > img{
+   width: 20vmax;
+}
+
+.product > h4{
+   margin: 2%;
+}
+.product > h5{
+   margin: 0%;
+}
+.product:hover{
+   transform: translateY(-10px);
+}
+
+/* Footer */
+
+footer{
+   margin-top: 8vmax;
+   padding: 2vmax;
+   background-color: rgb(37, 37, 37);
+   color: white;
+   display: flex;
+   align-items: center;
+}
+
+.leftFooter{
+   width: 20%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.leftFooter>p{
+   text-align: center;
+}
+
+.leftFooter>img{
+   margin: 1vmax;
+   width: 10vmax;
+   cursor: pointer;
+}
+
+.midFooter{
+   width: 60%;
+   text-align: center;
+}
+.midFooter>h1{
+   text-decoration: none;
+   color: blueviolet;
+   font-size: 4vmax;
+   font-weight: 600;
+}
+.midFooter>p{
+   font-size: 1.2vmax;
+   max-width: 40%;
+   margin: 1vmax auto;
+}
+
+.rightFooter{
+   display: flex;
+   flex-direction: column;
+   width: 20%;
+   justify-content: center;
+
+}
+.rightFooter>h4{
+   font-size: 1.5vmax;
+   text-align: center;
+   text-decoration: underline;
+}
+
+.social{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-bottom:1vmax;
+}
+
+.social>img{
+   display: flex;
+   width: 2.5vmax;
+   cursor: pointer;
+   justify-content:center;
+}
+.social>a{
+   font-size: 1.2vmax;
+   font-weight: 500;
+   display: flex;
+   text-decoration: none;
+   color:white;
+}
